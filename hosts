@@ -4,20 +4,20 @@ all:
     pemserver:
       hosts:
         pemserver1:
-          ansible_host: 34.102.46.138
-          private_ip: 10.168.0.3
+          ansible_host: 34.94.148.65
+          private_ip: 10.168.0.2
     barmanserver:
       hosts:
         barmanserver1:
-          ansible_host: 34.102.71.133
+          ansible_host: 34.94.79.57
           private_ip: 10.168.0.4
     primary:
       hosts:
         primary1:
-          ansible_host: 35.235.77.106
-          private_ip: 10.168.0.2
+          ansible_host: 34.94.204.39
+          private_ip: 10.168.0.3
           barman: true
           barman_server_private_ip: 10.168.0.4
           barman_backup_method: postgres
           pem_agent: true
-          pem_server_private_ip: 10.168.0.3
+          pem_server_private_ip: 10.168.0.2
